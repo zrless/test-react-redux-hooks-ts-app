@@ -5,7 +5,7 @@ import { fetchRecords } from "../../services/home";
  * 在redux中异步请求
  * action中请求数据
  */
-export const getRecords = () => {
+export const getRecords = (params?: any) => {
   return async (dispatch: any) => {
     const res = await fetchRecords();
     dispatch({
