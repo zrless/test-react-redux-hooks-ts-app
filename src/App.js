@@ -1,6 +1,8 @@
 import React, { useState, createContext, useEffect } from "react";
 import MyToDoList from "./pages/todolist";
-
+import MyList from "./pages/home";
+import { Provider } from "react-redux";
+import store from "./models/store"
 export const Context = createContext();
 
 function App() {
@@ -17,6 +19,10 @@ function App() {
       <Context.Provider value={data}>
         <MyToDoList />
       </Context.Provider>
+
+      <Provider store={store}>
+        <MyList />
+      </Provider>
     </div>
   );
 }

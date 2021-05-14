@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Rico",
+    "age": 24,
+    "company": "收钱吧"
+  },
+  {
+    "name": "Tony",
+    "age": 48,
+    "company": "阿里巴巴"
+  },
+  {
+    "name": "Allen",
+    "age": 36,
+    "company": "腾讯"
+  }
+]

@@ -77,7 +77,7 @@ const MyToDoList: FC = (): ReactElement => {
   }, []);
 
   useEffect(() => {
-    console.log(state.records);
+    console.log("todolist:", state.records);
     localStorage.setItem("todolist", JSON.stringify(state.records));
   }, [state.records]);
 
